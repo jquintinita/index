@@ -1,290 +1,230 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>Hello World</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="http://jquintinita.design/favicon.png" />
+    <meta property="og:image" content="http://jquitinita.clan.su/image/websitescreenshot.png">
+    <meta property="og:title" content="Joseph Quintinita's Portfolio">
+    <meta property="og:description" content="Website Porfolio">
+    <meta name="description" content="Website Porfolio">
+    <meta name="keywords" content="Website, Development, graphic design, application development, mobile">
+    <meta name="author" content="www.jquintinita.design">
 
-<!-- Bootstrap -->
-<link href="css/main.css" rel="stylesheet" type="text/css">
-<link href="assets/stylesheets/flaticon/flaticon.css" rel="stylesheet" type="text/css">
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <!--[if lt IE 9]>
+ <script type="text/javascript">
+ var e = ("header,footer,article,aside,section,nav").split(',');
+ for (var i = 0; i < e.length; i++) {
+ document.createElement(e[i]);
+ }
+ </script>
+ <![endif]-->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/_st/my.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <title>Welcome to my Portfolio</title>
+    <style>
+        /* Firefox seems to have issues loading the clip path from inside the CSS */
+         .link--urpi::before {
+         -webkit-clip-path: url(#cp_up); 
+         clip-path: url(#cp_up);
+         }
+        
+         .link--urpi::after {
+         -webkit-clip-path: url(#cp_down); 
+         clip-path: url(#cp_down);
+         }
+    </style>
 </head>
-<body>
-      <section class="navSection " id="navContainer">
-        <button type="button" aria-label="Toggle Navigation" class="lines-button x menuNav " id="mainMenu1">
-            <span class="lines"></span>
-        </button>
 
-          <ul class="list-unstyled text-color-fff sidebarMenu">
-                <li><a href="#main-container" class="nav">HOME</a></li>
-                <li><a href="#skills" class="nav">ABOUT</a></li>
-                <li><a href="#myworks" class="nav">PORTFOLIO</a></li>
-                <li><a href="#contact" class="nav">CONTACT</a></li>
-          </ul>
-      </section>
-      <section id="main-container" class="mainContainer fullContainer">
-          <div class="banner">
-              <div class="container text-center">
-                <a href="" class="mylogo"><img src="images/logo.png" alt="JQ"></a>
-                <h1 class="wel-title">Web Designer / Front-end Developer</h1>
-              </div>
-          </div>
-          <div id="skills">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-3 col-sm-3 col-xs-6 ">
-                          <div class="circle first">
-                              <strong></strong>
-                              <span>HTML/HTML5</span>
-                          </div>
-                      </div>
-                      <div class="col-md-3 col-sm-3 col-xs-6">
-                          <div class="circle second">
-                              <strong></strong>
-                              <span>CSS/CSS3</span>
-                          </div>
-                      </div>
-                      <div class="col-md-3 col-sm-3 col-xs-6" >
-                          <div class="circle third">
-                              <strong></strong>
-                              <span>Javascript/Jquery</span>
-                          </div>
-                      </div>
-                      <div class="col-md-3 col-sm-3 col-xs-6">
-                          <div class="circle forth">
-                              <strong></strong>
-                              <span>Photoshop</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="about">
-              <div class="container">
-                  <p class="small-content">As a web designer, my objective is to make a positive impact on clients, co-workers, and the Internet using my skills and experience to design compelling and attractive websites. I enjoy working on projects that involve a mix of web and graphic design and web development.<br/><br/> <br/> <a href="" class="btn-round-white ">Take a Tour</a>
-                  </p>
-                 
-              </div>
-          </div>
-          <div class="gallery" id="myworks">
-              <div class="gallery-inner">
-                  <div class="col-md-3 col-sm-6">
-                    <div class="img-holder">
-                        <img src="images/durian-green.jpg" alt="durain"/>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div class="img-holder">
-                        <img src="images/360poker.jpg" alt="durain"/>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div class="img-holder">
-                        <img src="images/treble-logo.jpg" alt="durain"/>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div class="img-holder">
-                        <img src="images/vexil-art.jpg" alt="durain"/>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div class="img-holder">
-                        <img src="images/allIn-or-fold.jpg" alt="durain"/>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div class="img-holder">
-                        <img src="images/mock-up-website.jpg" alt="durain"/>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div class="img-holder">
-                        <img src="images/foursquare-logo.jpg" alt="durain"/>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6">
-                    <div class="img-holder">
-                        <img src="images/qtech-cover.jpg" alt="durain"/>
-                    </div>
-                  </div>
-              </div>
-          </div>
-         <!-- <div class="service">
-              <div class="container">
-                <div class="col-md-3 col-sm-3 text-center">
-                <i class="glyph-icon flaticon-monitor85"></i>
-                  <p class="text-center">
-                    Each of my designs begins with a blank canvas which allows your content to guide the layout.
-                  </p>
-                </div>
-                <div class="col-md-3 col-sm-3 text-center">
-                <i class="glyph-icon flaticon-code42"></i>
-                  <p class="text-center">
-                    Responsive development will help make your website easily accessible across all devices.
-                  </p>
-                </div>
-                <div class="col-md-3 col-sm-3 text-center">
-                <i class="glyph-icon flaticon-portfolio36"></i>
-                  <p class="text-center">
-                    A matching newsletter is the perfect way to  complement your website & keep in contact.
-                  </p>
-                </div>
-                <div class="col-md-3 col-sm-3 text-center">
-                <i class="glyph-icon flaticon-link59"></i>
-                  <p class="text-center">
-                   It's important to keep your brand consistent and  recognizable across all platforms.
-                  </p>
-                </div>
-              </div>
-            </div>-->
-            <div id="website" class="text-center">
-              <h3>My Coded Websites</h3>
-              <div class="container">
-                <div class="first">
-                   <div class="col-md-3 box">
-                    <div class="img-thumbnail">
-                      <img src="images/insulatingproduct.png" alt="insulating products" class="img-responsive">
-                      <div class="site-details">
-                        <h3>Insulating Product</h3>
-                        <a href="http://www.insulating-products.com" target="_blank">View Site</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 box">
-                    <div class="img-thumbnail">
-                      <img src="images/labellemari.png" alt="labellemari" class="img-responsive">
-                       <div class="site-details">
-                        <h3>La Belle Mari</h3>
-                        <a href="http://www.mexigo.com" target="_blank">View Site</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 box">
-                    <div class="img-thumbnail">
-                      <img src="images/TripleEagleElectric.png" alt="Triple Eagle Electric" class="img-responsive">
-                       <div class="site-details">
-                        <h3>Triple Eagle Electric</h3>
-                        <a href="http://www.tripleeagleelectric.com" target="_blank">View Site</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 box">
-                    <div class="img-thumbnail">
-                      <img src="images/mexigo.png" alt="mexigo" class="img-responsive">
-                       <div class="site-details">
-                        <h3>Mexigo</h3>
-                        <a href="http://www.mexigo.com" target="_blank">View Site</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="second">
-                <div class="col-md-3 box">
-                  <div class="img-thumbnail">
-                    <img src="images/thevenueinplano.jpg" alt="the venue in plano" class="img-responsive">
-                     <div class="site-details">
-                      <h3>The Venue In Plano</h3>
-                      <a href="http://www.thevenueinplano.com" target="_blank">View Site</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 box">
-                  <div class="img-thumbnail">
-                    <img src="images/nadinefloors.png" alt="nadine floors" class="img-responsive">
-                     <div class="site-details">
-                      <h3>Nadine Floors</h3>
-                      <a href="http://www.nadinefloors.com" target="_blank">View Site</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 box">
-                  <div class="img-thumbnail">
-                    <img src="images/mogios.png" alt="mogios" class="img-responsive">
-                     <div class="site-details">
-                      <h3>Mogios Pizza</h3>
-                      <a href="http://www.mogiospizza.com" target="_blank">View Site</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 box">
-                  <div class="img-thumbnail">
-                    <img src="images/royaltytax.JPG" alt="Royalty Tax" class="img-responsive">
-                     <div class="site-details">
-                      <h3>Royalty Tax</h3>
-                      <a href="#" target="_blank">View Site</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+<body class="t-body"> <svg class="hidden" viewBox="0 0 500 160">
+ <defs>
+ <clippath id="cp_up">
+ <polygon id="cp_poly_up" points="0,0 500,0 500,180" />
+ </clippath>
+ <clippath id="cp_down">
+ <polygon id="cp_poly_down" points="0,0 0,180 500,180" />
+ </clippath>
+ </defs>
+ <defs>
+ <clippath id="cp_up2">
+ <polygon id="cp_poly_up2" points="0,0 500,0 500,125" />
+ </clippath>
+ <clippath id="cp_down2">
+ <polygon id="cp_poly_down2" points="0,0 0,125 500,125" />
+ </clippath>
+ </defs>
+ </svg>
+    <div id="fullpage">
+        <div class="section active">
+            <div class="wel-box">
+                <div class="wel-title">My name is</div>
+                <div class="name-f text-right"><a class="link link--ilin text-lg" href="#"><span>Jos</span><span>eph</span></a></div>
+                <div class="name-s text-left"> <a class="link link--ilin text-md surname" href="#"><span>Quint</span><span>inita</span></a></div>
+                <div class="wel-title">Front End Developer | Website Designer</div>
             </div>
-          </div>
+            <div class="skew-box">
+            </div>
+            <div id="particles-js"></div>
+            <div id="trigger2"></div>
+        </div>
+        <div class="section about">
 
-      </section>
-     
- <section class="hidden">
- $GLOBAL_BFOOTER$
- </section>
-<div id="map" >
-</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.js"></script>
-<script src="js/circle-progress.js"></script>
-<script src="js/general.js"></script>
-<script>
-$(function(){
-   var btncount=0;
-    $('.menuNav').click(function(){
-        btncount+=1;
-        if (btncount==1) {
-        $('#navContainer').addClass('navActive');
-        $('#main-container').removeClass('fullContainer');
-        }
-        else{
-         $('#navContainer').removeClass('navActive');
-         $('#main-container').addClass('fullContainer');
-            btncount=0;
-        }  
-    });
-});
+            <div class="pic-container">
+                <img src="image/myphoto.png" alt="" />
+            </div>
+            <div class="about-wel">
+                <h2>About <b>JOSEPH Q.</b></h2>
+            </div>
+            <div class="about-container">
+                <h2><b></b></h2>
+                <p>I'm Front End Developer and Web Designer from Philippines, My work ranges from digital design, branding, interactive animation, UX/UI, Web Development and more. In my former career I had the privilege of working with companies such as
+                    Falcontek Corp, Click4Corp, Qtech Business Solutions.</p>
+                <div class="tools row">
+                    <div style="top:210px; left: 100px;"><img src="image/wordpress-logo-notext-rgb.png" alt="photoshop"></div>
+                    <div style="top:40px; left: 230px;"><img src="image/photoshop.png" alt="photoshop"></div>
+                    <div style="top:100px; left: -130px;"><img src="image/ai.png" alt="photoshop"></div>
+                    <div style="top:200px; left: 30px;"><img src="image/ae.png" alt="photoshop"></div>
+                    <div style="top:240px; left: 180px;"><img src="image/pr.png" alt="photoshop"></div>
+                    <div style="top:140px; left: 30px;"><img src="image/html5-icon-2.png" alt="photoshop"></div>
+                    <div style="top:40px; left: 30px;"><img src="image/css3.png" alt="photoshop"></div>
+                    <div style="top:90px; left:50px;"><img src="image/Javascript-shield_grysg1.png" alt="photoshop"></div>
+                    <div style="top:210px; left: 100px;"><img src="image/VisualStudioLogo.png" alt="photoshop"></div>
+
+                </div>
+            </div>
+            <div id="particles-js2"></div>
+        </div>
+        <div class="section portfolio">
+            <div class="spacer s0" id="trigger"></div>
+            <div class="featured">
+                <img class="img-box" src="image/hayes-medows.jpg">
+              
+            </div>
+            <div class="content" style="background-color:#fff">
+                <div class="gal-title">
+                    <h2>My <b>Porfolio</b></h2>
+                </div>
+                <div class="gallery">
+                      <div class="gal-box">
+                        <img src="image/hayes-medows.jpg" alt="hayes medows" />
+                    </div>
+                   
+                    <div class="gal-box">
+                        <img src="image/mainichi-business-card.jpg" alt="mainichi" />
+                    </div>
+                     <div class="gal-box">
+                        <img src="image/mainichi.jpg" alt="mainichi" />
+                    </div>
+                    <div class="gal-box">
+                        <img src="image/kits.jpg" alt="kits logo" />
+                    </div>
+                    <div class="gal-box">
+                        <img src="image/iFinance-thumb.jpg" alt="ifinance" />
+                    </div>
+                    <div class="gal-box">
+                        <img src="image/qsm.png" alt="qsm application" />
+                    </div>
+
+                    <div class="gal-box">
+                        <img src="image/qsr-folder.png" alt="qsr folder" />
+                    </div>
+                    <div class="gal-box">
+                        <img src="image/philchi.jpg" alt="philchi" />
+                    </div>
+                    <div class="gal-box">
+                        <img src="image/membz.jpg" alt="membz" />
+                    </div>
+
+                    <div class="gal-box">
+                        <img src="image/charm.jpg" alt="charm website" />
+                    </div>
+                    <div class="gal-box">
+                        <img src="image/charm-logo.jpg" alt="charm logo" />
+                    </div>
+                    <div class="gal-box">
+                       <img src="image/kitsmock-up.jpg" alt="kits website" />
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="navi-menu">
+        <div class="logo-container">
+            <a href="#" class="logo"></a>
+        </div>
+        <div class="burger-btn">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </div>
+    <div class="main-menu">
+        <ul>
+            <li><a href="#firstPage">Home</a></li>
+            <li><a href="#secondPage">About Me</a></li>
+            <li><a href="#3rdPage">Portfolio</a></li>
+        </ul>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+         
+         $('#fullpage').fullpage({
+         sectionsColor: ['#000', '#eee', '#000', 'whitesmoke', '#ccddff'],
+         anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+         menu: '#menu',
+         scrollingSpeed: 1000
+         });
+         $(".burger-btn").mainMenu();
+            
+            $(".gal-box").click(function(){
+               var imgSel = $(this).find("img").attr("src");
+                console.log(imgSel);
+                $(".img-box").attr("src", imgSel);
+            });
+            
+            
+         });
+         
+         // init controller
+         var controller = new ScrollMagic.Controller();
+        
+         // build scene and set duration to window height
+         var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
+         .setClassToggle(".featured", "slideUp")
+         .addTo(controller);
+         
+         var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
+         .setClassToggle(".content", "slideDown")
+         .addTo(controller);
+         
+         var scene = new ScrollMagic.Scene({triggerElement: "#trigger2"})
+         .setClassToggle(".about-container", "slideLeft")
+         .addTo(controller);
+         var scene = new ScrollMagic.Scene({triggerElement: "#trigger2"})
+         .setClassToggle(".pic-container", "slideRight")
+         .addTo(controller);
+         var scene = new ScrollMagic.Scene({triggerElement: "#trigger2"})
+         .setClassToggle(".about-wel", "slideRight")
+         .addTo(controller);
     </script>
-    
-    <script type="text/javascript">
-    var anchor = document.querySelectorAll('button');
-    
-    [].forEach.call(anchor, function(anchor){
-      var open = false;
-      anchor.onclick = function(event){
-        event.preventDefault();
-        if(!open){
-          this.classList.add('close');
-          open = true;
-        }
-        else{
-          this.classList.remove('close');
-          open = false;
-        }
-      }
-    }); 
-  </script>
-    <script type="text/javascript">
 
-// Capture scroll events
-$(window).scroll(function(){
-    checkAnimation();
-});
-</script>
+    $GLOBAL_BFOOTER$
 </body>
+
 </html>
