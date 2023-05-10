@@ -23,11 +23,14 @@
 
 $(document).ready(function() {
          
+
+    
     $('#fullpage').fullpage({
     sectionsColor: ['#000', '#eee', 'whitesmoke', 'whitesmoke', '#ccddff'],
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
     menu: '#menu',
-    scrollingSpeed: 1000
+    scrollingSpeed: 1000,
+    responsiveWidth: 800
     });
     $(".burger-btn").mainMenu();
        
@@ -40,7 +43,7 @@ $(document).ready(function() {
             var win = $(this); //this = window
             if (win.width() <= 768) {
                 $.fn.fullpage.setAllowScrolling(true);
-
+                console.log("here")
              }
         });
     });

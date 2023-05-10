@@ -11866,6 +11866,39 @@ display:none;
   display: none;
 }
 @media screen and (max-width: 980px) {
+  .navi-menu {
+    background: rgb(0 0 0 / 80%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90px;
+}
+.logo-container {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  left: 30px;
+  top: 14px;
+}
+.burger-btn {
+  width: 40px;
+  height: 60px;
+  position: fixed;
+  right: 45px;
+  top: 6px;
+  z-index: 9999;
+  cursor: pointer;
+  display: block;
+  padding: 25px 0;
+}
+.about-container p {
+  color: #333;
+  font-size: 20px;
+  text-shadow: 1px 2px 1px #fff;
+}
+  #fullpage{
+    overflow-x: hidden;
+  }
   .gallery-desktop{
     display: none;
   }
@@ -11892,6 +11925,10 @@ display:none;
     flex: 1 30% !important;
     border: none !important;
 }
+}
+div#particles-js {
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 767px) {
   .logo-container {
