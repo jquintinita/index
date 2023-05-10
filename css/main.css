@@ -11439,7 +11439,7 @@ header {
   width: 400px;
   height: 100%;
   position: fixed;
-  right: -100%;
+  right: -130%;
   top: 0;
   background-color: #1a1a1a;
   z-index: 8;
@@ -11553,6 +11553,7 @@ header {
 .about-wel {
   display: block;
   color: #333;
+  z-index: 99;
   opacity: 0.5;
   right: 30%;
   top: 20%;
@@ -11693,7 +11694,7 @@ header {
   .gal-title h2 {
     font-weight: 100;
     font-size: 70px;
-    text-shadow: 146px -46px 0px rgba(51, 51, 51, 0.19); }
+  }
     .gal-title h2 b {
       font-weight: 700; }
 
@@ -11779,3 +11780,186 @@ body > div:first-child
 display:none;
 }
 /*# sourceMappingURL=main.css.map */
+
+.fullpage{
+
+}
+/*Addtional CSS*/
+.gallery-container{
+  max-width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+.gallery-wrapper{
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 0 10px;
+}
+.gallery-slider .slick-track{
+
+}
+.gallery-wrapper > a.gallery-box{
+  display: block;
+  flex: 1 1 40%;
+  border: 5px solid #fff;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.gallery-container .gallery-wrapper > a.gallery-box{
+  display: block;
+  flex: 1 40% !important;
+  border:none !important
+}
+.gallery-wrapper > a.gallery-box .gallery-img{
+  background-color: #fff;
+  overflow: hidden;
+
+}
+.gallery-wrapper > a.gallery-box .gallery-img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  transition: all 200ms linear;
+}
+.gallery-wrapper > a.gallery-box:hover img{
+  transform: scale(1.15);
+}
+
+
+@media screen  and (min-width: 1280px){
+  .gallery-container .gallery-wrapper > a.gallery-box{
+    display: block;
+    flex: 1 1 15% !important;
+    border:none !important
+  }
+}
+.gallery-slider .slick-arrow{
+  width: 30px;
+  height: 30px;
+}
+.gallery-slider .slick-arrow::before{
+  color: #333 !important;
+  font-size: 30px;
+}
+.gallery-slider .slick-prev{
+   left: -30px !important;
+}
+.gallery-slider .slick-next{
+  right: -30px !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-container {
+    left: 5%;
+    top: 35%;
+    width: 100%;
+    max-width: 550px;
+}
+}
+.gallery-desktop{
+  display: block;
+}
+.gallery-mobile{
+  display: none;
+}
+@media screen and (max-width: 980px) {
+  .gallery-desktop{
+    display: none;
+  }
+  .gallery-mobile{
+    display: block;
+  }
+  h2{
+    font-size: clamp(2.25rem, 1.2632rem + 2.6316vw, 2.875rem) !important;
+  }
+  .about-wel{
+    right: 20%;
+  }
+  .about-container{
+    max-width: 600px;
+    width: 96%;
+    top: 48%
+  }
+  .pic-container {
+      right: 0;
+      top: 24%;
+  }
+  .gallery-container .gallery-wrapper > a.gallery-box {
+    display: block;
+    flex: 1 30% !important;
+    border: none !important;
+}
+}
+@media screen and (max-width: 767px) {
+  .logo-container {
+      width: 50px;
+      height: auto;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+  }
+  .burger-btn {
+    width: 40px;
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    top: 15px;
+  }
+  .wel-box {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+  }
+  .name-f.text-right, .wel-box div.name-s {
+      flex: 0 100%;
+      width: 100% !important;
+      text-align: center !important;
+  }
+  .wel-box div.name-f a {
+      margin-top: -20px;
+      font-weight: 600;
+      margin-right: auto;
+      display: block;
+      margin-left: auto;
+      text-align: center;
+      line-height: 1em;
+      font-size: 82px;
+  }
+
+  .wel-box div.name-s a {
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+  .wel-box .wel-title{
+    margin-top: 20px;
+  }
+  .pic-container {
+    right: 10%;
+    top: 24%;
+    width: 70%;
+    text-align: center;
+}
+.about-container {
+  max-width: 600px;
+  width: 96%;
+  top: 48%;
+  left: 0;
+}
+
+
+
+.gallery-container .gallery-wrapper > a.gallery-box {
+  display: block;
+  flex: 0 40% !important;
+  border: none !important;
+}
+.gallery-container{
+  height: 90vh;
+  overflow-y: scroll;
+}
+}

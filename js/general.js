@@ -1,9 +1,10 @@
 (function ($) {
     $.fn.mainMenu = function(){
         $(".burger-btn").click(function(){
+       
            if ( $(this).hasClass('active')){
                $(this).removeClass('active');
-               $(".main-menu").css({right: "-100%"})
+               $(".main-menu").css({right: "-130%"})
            } 
             else{
                  $(this).addClass('active');
@@ -12,7 +13,7 @@
         });
         $("#fullpage").click(function(){
              $(".burger-btn").removeClass('active');
-            $(".main-menu").css({right: "-100%"})
+            $(".main-menu").css({right: "-130%"})
         });
     }
     
@@ -23,7 +24,7 @@
 $(document).ready(function() {
          
     $('#fullpage').fullpage({
-    sectionsColor: ['#000', '#eee', '#000', 'whitesmoke', '#ccddff'],
+    sectionsColor: ['#000', '#eee', 'whitesmoke', 'whitesmoke', '#ccddff'],
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
     menu: '#menu',
     scrollingSpeed: 1000
@@ -35,8 +36,13 @@ $(document).ready(function() {
            console.log(imgSel);
            $(".img-box").attr("src", imgSel);
        });
-       
-       
+       $(window).on('resize', function(){
+            var win = $(this); //this = window
+            if (win.width() <= 768) {
+                $.fn.fullpage.setAllowScrolling(true);
+
+             }
+        });
     });
     
     // init controller
