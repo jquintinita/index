@@ -1,0 +1,21 @@
+#apply-now-sec{
+    background-color: var(--color-grey-10);
+    padding: 60px 0;
+    .apply-now-box{
+        > .form-amount-range{
+            max-width: 980px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            .flex-container{
+                align-items: center;
+                margin-top: 30px;
+                justify-content: center;
+            }
+        }
+        .fileupload {
+            label{
+                align-content: center;
+            }
+        }
+    }
+}

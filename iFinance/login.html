@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | iFinance Lending Investor Corporation</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <section class="login-sec">
+        <div class="row flex-container flex-1col-3col">
+            <div class="login-wrapper">
+                <div class="row">
+                    <a href="/"><i class="icon-back"></i> Go back to Website</a>
+                </div>
+                <div class="row">
+                    <div class="logo">
+                        <img src="./assets/img/ifinance-logo.png"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <form class="login-form" action="/myaccount.html">
+                        <div class="form-group">
+                            <input type="phone" placeholder="Enter Your Phone Number"/>
+                            <label>Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="js-date"  placeholder="MM/DD/YYYY" maxlength="10"/>
+                            <label>Your Date of Birth</label>
+                        </div>
+                        <button class="btn-login">Login</button>
+                    </form>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="banner-wrapper">
+                    <div class="area" >
+                        <ul class="circles">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div >
+                    <div class="row">
+                       <h1>Be in control of your Credit Loans</h1>
+                       <div class="">
+                            <img src="./assets/img/woman-thinking-on-the-phone.png" alt=""/>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var input = document.querySelectorAll('.js-date')[0];
+            var dateInputMask = function dateInputMask(elm) {
+                elm.addEventListener('keypress', function(e) {
+                if(e.keyCode < 47 || e.keyCode > 57) {
+                    e.preventDefault();
+                }
+                
+                var len = elm.value.length;
+                
+                // If we're at a particular place, let the user type the slash
+                // i.e., 12/12/1212
+                if(len !== 1 || len !== 3) {
+                    if(e.keyCode == 47) {
+                    e.preventDefault();
+                    }
+                }
+                
+                // If they don't add the slash, do it for them...
+                if(len === 2) {
+                    elm.value += '/';
+                }
+            
+                // If they don't add the slash, do it for them...
+                if(len === 5) {
+                    elm.value += '/';
+                }
+                });
+            };
+                
+            dateInputMask(input);
+    </script>
+</body>
+</html>

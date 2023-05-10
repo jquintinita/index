@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Perfect loan for you | iFinance Lending Investor Corporation</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <a href="/" class="logo-box"><img src="./assets/img/ifinance-logo.png" width="365"/></a>
+                    <div class="menu-nav">
+                        <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                            <svg width="50" height="50" viewBox="0 0 100 100">
+                              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                              <path class="line line2" d="M 20,50 H 80" />
+                              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                            </svg>
+                          </button>
+                        <ul>
+                            <li><a href="#about-us">About Us</a></li>
+                            <li><a href="#how-to-qualify">How to Qualify</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                            <li><a href="login.html" class="btn-login">Login</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="apply-now-sec">
+        <div class="container">
+            <div class="apply-now-box">
+                <form class="form-amount-range" action="apply-now.html">
+                    <h3>Ready to get your loan?</h3>
+                    <p>Just fill out this simple form and we'll do the rest!</p>
+                    <div class="flex-container flex-2col">
+                        <div class="">
+                            <div class="label-group">
+                                <label>Amount</label>
+                                <label class="amount"><span id="amountTotalrange">5.000 </span><small>PHP</small></label>
+                            </div>
+                            <div class="form-group">
+                                <input type="range" min="500" max="25000" value="5000" step="500" class="amount-range" id="amountRange">
+                            </div>
+                            <div class="label-group">
+                                <label>Payment Terms</label>
+                            </div>
+                            <div class="segmentedControl">
+                                <span class="segmentedControl--group">
+                                    <input type="radio" name="termsPayment" id="30Days" checked />
+                                    <label class="label" for="30Days">30 <span>Days</span></label>
+                                </span>
+                                <span class="segmentedControl--group">
+                                    <input type="radio" name="termsPayment" id="60Days" />
+                                    <label class="label" for="60Days">60 <span>Days</span></label>
+                                </span>
+                                <span class="segmentedControl--group">
+                                    <input type="radio" name="termsPayment" id="90Days" />
+                                    <label class="label" for="90Days">90 <span>Days</span></label>
+                                </span>
+                                <span class="segmentedControl--group">
+                                    <input type="radio" name="termsPayment" id="120Days" />
+                                    <label class="label" for="120Days">120 <span>Days</span></label>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Complete Name"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="phone" placeholder="Phone Number"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Complete Address"/>
+                            </div>
+                            <div class="form-group fileupload">
+                                <input type="file" id="uploadID" placeholder="Upload Id Picture"/>
+                                <label for="uploadID">
+                                    <span>Upload Id Picture</span>
+                                    <span class="button">Choose File</span>
+                                </label>
+                            </div>
+                            <div class="form-group fileupload">
+                                <input type="file" id="uploadStore" placeholder="Upload Store Picture"/>
+                                <label for="uploadStore">
+                                    <span>Upload Store Picture</span>
+                                    <span class="button">Choose File</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-apply">Apply Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="steps-sec">
+        <div class="container">
+            <div class="text-block">
+                <h2 class="text-center">Get the loan that you need in minutes!</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="row flex-container flex-3col">
+                <div class="steps">
+                    <i class="icon-apply"></i>
+                    <h3>Apply Online</h3>
+                    <p>Donec aliquam ipsum eros. Phasellus tempus felis et libero interdum placerat. </p>
+                </div>
+                <div class="steps">
+                    <i class="icon-ci"></i>
+                    <h3>Customer Investigation</h3>
+                    <p>Donec aliquam ipsum eros. Phasellus tempus felis et libero interdum placerat. </p>
+                </div>
+                <div class="steps">
+                    <i class="icon-give-money"></i>
+                    <h3>Releasing</h3>
+                    <p>Donec aliquam ipsum eros. Phasellus tempus felis et libero interdum placerat. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row flex-container">
+                <div class="">
+                    <a href="/" class="logo-footer"><img src="./assets/img/ifinance-logo-white.png" alt="ifinance Logo"/> </a>
+                    <ul class="list-inline footer-link">
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#how-to-qualify">How to Qualify</a></li>
+                        <li><a href="#contactus-sec">FAQ</a></li>
+                        <li><a href="#contactus-sec">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#" class="btn-apply">Apply Now</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>iFinance ©  All right reserve</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/general.js"></script>
+
+</body>
+</html> 
