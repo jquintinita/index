@@ -11407,7 +11407,9 @@ header {
       background-image: url(../image/jq-logo.png);
       height: 90px;
       background-size: contain;
+      transition: all 200ms linear;
       background-repeat: no-repeat; }
+     
 
 .burger-btn {
   width: 40px;
@@ -11426,6 +11428,15 @@ header {
     display: block;
     margin-bottom: 5px;
     transition: linear 0.2s; }
+ 
+  @media only screen  and (min-width: 991px) {
+    .logo-container > a.logo.invert {
+      filter: invert(1);
+    } 
+    .burger-btn.invert .line {
+      background-color: #333;
+    }
+  }
   .burger-btn.active .line:first-child {
     transform: rotate(-45deg) translate(-3px, 2px);
     -webkit-transform: rotate(-45deg) translate(-3px, 2px); }
@@ -11919,12 +11930,21 @@ display:none;
   .pic-container {
       right: 0;
       top: 24%;
+      z-index: 9;
   }
   .gallery-container .gallery-wrapper > a.gallery-box {
     display: block;
     flex: 1 30% !important;
     border: none !important;
 }
+.tools.row {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+  top: 0;
+  transform: translateY(-180%);
+}
+
 }
 div#particles-js {
   width: 100%;
@@ -11949,6 +11969,10 @@ div#particles-js {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
+      top: 36% !important;
+  }
+  .skew-box{
+    top: 41% !important
   }
   .name-f.text-right, .wel-box div.name-s {
       flex: 0 100%;
@@ -11987,8 +12011,17 @@ div#particles-js {
   top: 48%;
   left: 0;
 }
-
-
+.about-wel {
+  right: unset;
+  left: 43px;
+  top: 98px;
+}
+.pic-container {
+  right: -4%;
+  top: 16%;
+  width: 70%;
+  text-align: center;
+}
 
 .gallery-container .gallery-wrapper > a.gallery-box {
   display: block;
@@ -11996,7 +12029,12 @@ div#particles-js {
   border: none !important;
 }
 .gallery-container{
-  height: 70vh;
+  height: auto;
   overflow-y: scroll;
+}
+
+.tools > div:nth-child(6){
+  top: 140px;
+  left: -80px;
 }
 }

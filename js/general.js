@@ -30,8 +30,32 @@ $(document).ready(function() {
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
     menu: '#menu',
     scrollingSpeed: 1000,
-    responsiveWidth: 800
+    responsiveWidth: 800,
+    afterLoad: function(origin, destination, direction, trigger){
+        console.log(destination);
+        var currentPage = destination.toString();
+        switch (currentPage) { 
+            case '1': 
+                $(".logo").removeClass("invert");
+                //burger-btn
+                $(".burger-btn").removeClass("invert");
+                break;
+            case '2': 
+                $(".logo").addClass("invert");
+                $(".burger-btn").addClass("invert");
+                break;
+            case '3': 
+                $(".logo").addClass("invert");
+                $(".burger-btn").addClass("invert");
+                break;
+            default:
+                $(".logo").removeClass("invert");
+                $(".burger-btn").removeClass("invert");
+                
+        }
+    }
     });
+
     $(".burger-btn").mainMenu();
        
        $(".gal-box").click(function(){
