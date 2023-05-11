@@ -11791,7 +11791,17 @@ body > div:first-child
 display:none;
 }
 /*# sourceMappingURL=main.css.map */
-
+#fp-nav ul li .fp-tooltip{
+  opacity: 0;
+}
+div#fp-nav.fp-right {
+  right: 0;
+}
+#fp-nav ul li .fp-tooltip, .fp-sr-only {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .fullpage{
 
 }

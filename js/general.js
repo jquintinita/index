@@ -31,6 +31,9 @@ $(document).ready(function() {
     menu: '#menu',
     scrollingSpeed: 1000,
     responsiveWidth: 800,
+    navigation: true,
+    navigationPosition: 'right',
+    navigationTooltips:['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
     afterLoad: function(origin, destination, direction, trigger){
         console.log(destination);
         var currentPage = destination.toString();
