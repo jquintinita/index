@@ -1,0 +1,73 @@
+.skill-list{
+    display: flex;
+    max-width: 600px;
+    gap: 5px;
+    flex-wrap: wrap;
+    li{
+        list-style: none;
+        padding: 5px 10px;
+        border: 1px solid #333;
+        border-radius: 30px;
+        color: #333;
+        &:hover{
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            &.html{
+                background-color: #c73f00;
+            }
+            &.css{
+                background-color: #06469b;
+            }
+            &.jquery{
+                background-color: #bb9b0e;
+            }
+            &.javascript{
+                background-color: #475353;
+            }
+            &.nodejs{
+                background-color: #34b970;
+            }
+            &.wordpress{
+                background-color: #1b56a3;
+            }
+            &.bootstrap{
+                background-color: #43067c;
+            }
+            &.reactjs{
+                background-color: #18a0aa;
+            }
+            &.shopify{
+                background-color: #5dd359;
+            }
+            &.shopify{
+                background-color: #5dd359;
+            }
+            &.kentico{
+                background-color: #c47d20;
+            }
+            &.github{
+                background-color: #3c0253;
+            }
+            &.mongodb{
+                background-color: #01b34b;
+            }
+            &.tailwind{
+                background-color: #013fb3;
+            }
+            &.photoshop{
+                background-color: #0a0097;
+            }
+            &.premier{
+                background-color: #480157;
+            }
+        }
+    }
+}
+.about-container h2{
+    font-size: 42px;
+}
+.about-container h3{
+    font-size: 15px;
+    margin-bottom: 20px;
+}

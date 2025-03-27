@@ -1,0 +1,139 @@
+.gallery-img{
+    border-radius:  15px 15px 0 0;
+}
+.gallery-slider img{
+    max-width: 100%;
+    height: auto;
+   
+}
+
+.gallery-slider .slick-slide{
+    padding: 10px;
+    color: #333 !important;
+    text-decoration: none;
+   
+
+}
+.gallery-slider .slick-slide > .gallery-inner{
+    border-radius: 15px;
+    border: 1px solid #ebebeb;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.05);
+}
+.gallery-slider .gallery-description{
+    padding: 20px 18px;
+    background-color: #fefefe;
+    border-radius: 0 0 15px 15px;
+}
+
+.gallery-img{
+    position: relative;
+    overflow: hidden;
+    
+    .gallery-link{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-150%,-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #34748dd8;
+        border-radius: 15px 15px 0 0;
+        color: #fff;
+        transition: all 200ms ease;
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            &::after{
+                content: "";
+                width: 15px;
+                height: 15px;
+                background-image: url(../image/external-link.png);
+                background-size: contain;
+                display: inline-block;
+                margin-left: 8px;
+            }
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        .gallery-link{
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+
+.code-from {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    > span{
+        display: block;
+        background-color: transparent;
+        border: 1px solid #333;
+        color: #333;
+        padding: 2px 8px;
+        border-radius: 30px;
+        &:hover{
+            border: 1px solid #ffffff;
+            color: #fff;
+            &.html{
+                background-color: #c73f00;
+            }
+            &.css{
+                background-color: #06469b;
+            }
+            &.jquery{
+                background-color: #bb9b0e;
+            }
+            &.javascript{
+                background-color: #475353;
+            }
+            &.nodejs{
+                background-color: #34b970;
+            }
+            &.wordpress{
+                background-color: #1b56a3;
+            }
+            &.bootstrap{
+                background-color: #43067c;
+            }
+            &.reactjs{
+                background-color: #18a0aa;
+            }
+            &.shopify{
+                background-color: #5dd359;
+            }
+            &.shopify{
+                background-color: #5dd359;
+            }
+            &.kentico{
+                background-color: #c47d20;
+            }
+            &.github{
+                background-color: #3c0253;
+            }
+            &.mongodb{
+                background-color: #01b34b;
+            }
+            &.mysql{
+                background-color: #dbd800;
+            }
+            &.tailwind{
+                background-color: #013fb3;
+            }
+            &.photoshop{
+                background-color: #0a0097;
+            }
+            &.premier{
+                background-color: #480157;
+            }
+        }
+    }
+    
+}

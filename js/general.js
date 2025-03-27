@@ -26,8 +26,8 @@ $(document).ready(function() {
 
     
     $('#fullpage').fullpage({
-    sectionsColor: ['#000', '#eee', 'whitesmoke', 'whitesmoke', '#ccddff'],
-    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+    sectionsColor: ['#000', '#eee', 'whitesmoke', '#333', '#ccddff'],
+    anchors: ['home', 'about-me', 'portfolio', '4thpage', 'lastPage'],
     menu: '#menu',
     scrollingSpeed: 1000,
     responsiveWidth: 800,
@@ -96,3 +96,7 @@ $(document).ready(function() {
     var scene = new ScrollMagic.Scene({triggerElement: "#trigger2"})
     .setClassToggle(".about-wel", "slideRight")
     .addTo(controller);
+
+
+
+    
