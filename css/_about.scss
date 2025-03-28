@@ -3,63 +3,67 @@
     max-width: 600px;
     gap: 5px;
     flex-wrap: wrap;
+    padding: 0;
     li{
         list-style: none;
         padding: 5px 10px;
-        border: 1px solid #333;
+        border: 1px solid #fff;
         border-radius: 30px;
-        color: #333;
+        color: #fff;
         &:hover{
             background-color: #333;
             color: #fff;
             cursor: pointer;
-            &.html{
+            &.orange-500{
                 background-color: #c73f00;
             }
-            &.css{
+            &.blue-700{
                 background-color: #06469b;
             }
-            &.jquery{
+            &.yellow-600{
                 background-color: #bb9b0e;
             }
-            &.javascript{
+            &.gray-600{
                 background-color: #475353;
             }
-            &.nodejs{
+            &.green-200{
                 background-color: #34b970;
             }
-            &.wordpress{
+            &.blue-400{
                 background-color: #1b56a3;
             }
-            &.bootstrap{
+            &.violet-200{
                 background-color: #43067c;
             }
-            &.reactjs{
+            &.sky-blue-200{
                 background-color: #18a0aa;
             }
-            &.shopify{
+            &.green-500{
                 background-color: #5dd359;
             }
-            &.shopify{
-                background-color: #5dd359;
+            &.green-600{
+                background-color: #4db14a;
             }
-            &.kentico{
+            &.orange-300{
                 background-color: #c47d20;
             }
-            &.github{
+            &.violet-300{
                 background-color: #3c0253;
             }
-            &.mongodb{
+            &.green-100{
                 background-color: #01b34b;
             }
-            &.tailwind{
+            &.blue-100{
                 background-color: #013fb3;
             }
-            &.photoshop{
+            &.blue-600{
                 background-color: #0a0097;
             }
-            &.premier{
+            &.magenta-400{
                 background-color: #480157;
+            }
+            &.pink-100{
+                background-color: #e444c9;
             }
         }
     }

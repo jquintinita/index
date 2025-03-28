@@ -8854,7 +8854,7 @@ html.fp-enabled,
 /* Ilin */
 .link--ilin {
   font-weight: 400;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   overflow: hidden;
   color: #fff;
 }
@@ -8870,7 +8870,7 @@ html.fp-enabled,
 }
 
 .link--ilin:hover span:last-of-type {
-  color: #1e1a1b;
+  color: #f94125;
 }
 
 .link--ilin span::before {
@@ -8884,7 +8884,7 @@ html.fp-enabled,
 }
 
 .link--ilin span:last-of-type::before {
-  background: #1e1a1b;
+  background: #f94125;
 }
 
 .link--ilin:hover span:last-of-type::before,
@@ -10548,10 +10548,9 @@ header #particles-js {
   position: relative;
   float: left;
   margin-bottom: 30px;
-  font-size: 1.4em;
+  font-size: 1.5em;
   color: #fff;
-  letter-spacing: 6px;
-  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .wel-box:hover + .skew-box, .skew-box:hover {
@@ -10654,7 +10653,6 @@ header #particles-js {
   transition: all 0.3s ease-in;
   -webki-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
-  -webkit-backdrop-filter: blur(10px);
   transform: translate(150%, 0%);
   -webkit-transform: translate(150%, 0%);
   -o-transform: translate(150%, 0%);
@@ -10749,7 +10747,7 @@ header #particles-js {
 
 .gal-title h2 {
   font-weight: 100;
-  font-size: 70px;
+  font-size: 48px;
 }
 
 .gal-title h2 b {
@@ -10877,7 +10875,8 @@ div#fp-nav.fp-right {
 
 /*Addtional CSS*/
 .gallery-container {
-  max-width: 90%;
+  max-width: 1366px;
+  width: 90%;
   margin: 0 auto;
   display: block;
 }
@@ -11085,12 +11084,6 @@ div#particles-js {
   .wel-box .wel-title {
     margin-top: 20px;
   }
-  .pic-container {
-    right: 10%;
-    top: 24%;
-    width: 70%;
-    text-align: center;
-  }
   .about-container {
     max-width: 600px;
     width: 96%;
@@ -11099,7 +11092,7 @@ div#particles-js {
   }
   .pic-container {
     right: -4%;
-    top: 16%;
+    top: 1vh;
     width: 70%;
     text-align: center;
   }
@@ -11117,71 +11110,80 @@ div#particles-js {
     left: -80px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .text-md.surname {
+    font-size: 42px;
+  }
+}
 .skill-list {
   display: flex;
   max-width: 600px;
   gap: 5px;
   flex-wrap: wrap;
+  padding: 0;
 }
 .skill-list li {
   list-style: none;
   padding: 5px 10px;
-  border: 1px solid #333;
+  border: 1px solid #fff;
   border-radius: 30px;
-  color: #333;
+  color: #fff;
 }
 .skill-list li:hover {
   background-color: #333;
   color: #fff;
   cursor: pointer;
 }
-.skill-list li:hover.html {
+.skill-list li:hover.orange-500 {
   background-color: #c73f00;
 }
-.skill-list li:hover.css {
+.skill-list li:hover.blue-700 {
   background-color: #06469b;
 }
-.skill-list li:hover.jquery {
+.skill-list li:hover.yellow-600 {
   background-color: #bb9b0e;
 }
-.skill-list li:hover.javascript {
+.skill-list li:hover.gray-600 {
   background-color: #475353;
 }
-.skill-list li:hover.nodejs {
+.skill-list li:hover.green-200 {
   background-color: #34b970;
 }
-.skill-list li:hover.wordpress {
+.skill-list li:hover.blue-400 {
   background-color: #1b56a3;
 }
-.skill-list li:hover.bootstrap {
+.skill-list li:hover.violet-200 {
   background-color: #43067c;
 }
-.skill-list li:hover.reactjs {
+.skill-list li:hover.sky-blue-200 {
   background-color: #18a0aa;
 }
-.skill-list li:hover.shopify {
+.skill-list li:hover.green-500 {
   background-color: #5dd359;
 }
-.skill-list li:hover.shopify {
-  background-color: #5dd359;
+.skill-list li:hover.green-600 {
+  background-color: #4db14a;
 }
-.skill-list li:hover.kentico {
+.skill-list li:hover.orange-300 {
   background-color: #c47d20;
 }
-.skill-list li:hover.github {
+.skill-list li:hover.violet-300 {
   background-color: #3c0253;
 }
-.skill-list li:hover.mongodb {
+.skill-list li:hover.green-100 {
   background-color: #01b34b;
 }
-.skill-list li:hover.tailwind {
+.skill-list li:hover.blue-100 {
   background-color: #013fb3;
 }
-.skill-list li:hover.photoshop {
+.skill-list li:hover.blue-600 {
   background-color: #0a0097;
 }
-.skill-list li:hover.premier {
+.skill-list li:hover.magenta-400 {
   background-color: #480157;
+}
+.skill-list li:hover.pink-100 {
+  background-color: #e444c9;
 }
 
 .about-container h2 {
@@ -11331,8 +11333,50 @@ div#particles-js {
   background-color: #480157;
 }
 
+.mouse {
+  width: 40px;
+  height: 70px;
+  border: 1px solid #ffffff;
+  border-radius: 60px;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.mouse::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fffdfd;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 1s infinite;
+  -webkit-animation: wheel 1s infinite;
+}
+.mouse span {
+  position: absolute;
+  color: #fff;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 12px;
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 60px;
+  }
+}
 .work-experience .work {
   position: relative;
+  padding: 0 40px;
   width: 100%;
 }
 .work-experience .work .timeline {
@@ -11363,13 +11407,20 @@ div#particles-js {
   list-style: none;
   list-style-position: inside;
   margin: 15px 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
 }
 .work-experience .work .timeline__nav ul li {
-  margin: 15px 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 10px;
+  flex: 0 1;
   list-style-type: none;
   color: #bfc1c3;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted rgba(192, 186, 186, 0.3);
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
@@ -11377,10 +11428,10 @@ div#particles-js {
   font-weight: bold;
   color: #f94125;
   border-bottom: 1px dotted transparent;
-  transform: scale(1.2);
+  font-size: 22px;
 }
 .work-experience .work .timeline__nav ul li:hover {
-  color: #000;
+  color: #fafafa;
 }
 .work-experience .work .timeline .timeline__section {
   flex: 1;
@@ -11392,7 +11443,7 @@ div#particles-js {
 .work-experience .work .timeline .timeline__section .timeline-item {
   overflow: hidden;
   height: 0;
-  transition: all 200ms linear;
+  transition: all 200ms ease-in;
 }
 .work-experience .work .timeline .timeline__section .timeline-item.active {
   height: auto;
@@ -11400,4 +11451,122 @@ div#particles-js {
 .work-experience .work .timeline .timeline__section .timeline-item .job-title {
   font-size: 20px;
   font-weight: 600;
+}
+.work-experience .work .timeline .timeline__section .timeline-item .dates {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.work-experience .work .timeline .timeline__section .timeline-item .company {
+  margin-bottom: 15px;
+}
+
+.download-cv {
+  width: 100%;
+  text-align: center;
+}
+.download-cv > a {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #f94125;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 200ms linear;
+  border: 2px solid #f94125;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.download-cv > a:hover {
+  color: #f94125;
+  background-color: #fff;
+}
+.download-cv h2, .download-cv P {
+  color: #fff;
+}
+.download-cv .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.download-cv .social-media a {
+  transition: all 200ms ease-in;
+  display: block;
+}
+.download-cv .social-media a:hover {
+  transform: scale(1.2);
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #f94125;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 200ms linear;
+  border: 2px solid #f94125;
+  font-size: 20px;
+}
+.btn-download:hover {
+  color: #f94125;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.download {
+  background-color: #20466d;
+}
+.download div#particles-js2 {
+  width: 100%;
+  height: 100%;
+}
+
+.social-link {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+}
+.social-link a {
+  transition: all 200ms ease-in;
+  display: block;
+}
+.social-link a:hover {
+  transform: scale(1.2);
+}
+
+.icons8-telegram-app {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("../image/icons8-telegram-app-100.svg") 50% 50% no-repeat;
+  background-size: 100%;
+}
+
+.icons8-facebook {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("../image/icons8-facebook-100.svg") 50% 50% no-repeat;
+  background-size: 100%;
+}
+
+.icons8-facebook-messenger {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("../image/icons8-facebook-messenger-100.svg") 50% 50% no-repeat;
+  background-size: 100%;
+}
+
+.icons8-linkedin {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("../image/icons8-linkedin-100.svg") 50% 50% no-repeat;
+  background-size: 100%;
 }/*# sourceMappingURL=style.css.map */

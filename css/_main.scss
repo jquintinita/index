@@ -8885,7 +8885,7 @@ html.fp-enabled,
 /* Ilin */
 .link--ilin {
   font-weight: 400;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   overflow: hidden;
   color: #fff; }
 
@@ -8899,7 +8899,7 @@ html.fp-enabled,
   color: #fff; }
 
 .link--ilin:hover span:last-of-type {
-  color: #1e1a1b; }
+  color: #f94125; }
 
 .link--ilin span::before {
   content: '';
@@ -8912,7 +8912,7 @@ html.fp-enabled,
   transition: transform 0.5s; }
 
 .link--ilin span:last-of-type::before {
-  background: #1e1a1b; }
+  background: #f94125; }
 
 .link--ilin:hover span:last-of-type::before,
 .link--ilin span:first-of-type::before {
@@ -11536,10 +11536,10 @@ header {
     position: relative;
     float: left;
     margin-bottom: 30px;
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #fff;
-    letter-spacing: 6px;
-    text-transform: uppercase; }
+    letter-spacing: 3px;
+   }
 
 .wel-box:hover + .skew-box, .skew-box:hover {
   height: 410px; }
@@ -11621,7 +11621,6 @@ header {
   transition: all 0.3s ease-in;
   -webki-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
-  -webkit-backdrop-filter: blur(10px);
   transform: translate(150%, 0%);
   -webkit-transform: translate(150%, 0%);
   -o-transform: translate(150%, 0%); }
@@ -11691,7 +11690,7 @@ header {
   margin-top:0; }
   .gal-title h2 {
     font-weight: 100;
-    font-size: 70px;
+    font-size: 48px;
   }
     .gal-title h2 b {
       font-weight: 700; }
@@ -11794,7 +11793,8 @@ div#fp-nav.fp-right {
 }
 /*Addtional CSS*/
 .gallery-container{
-  max-width: 90%;
+  max-width: 1366px;
+  width: 90%;
   margin: 0 auto;
   display: block;
 
@@ -11998,12 +11998,7 @@ div#particles-js {
   .wel-box .wel-title{
     margin-top: 20px;
   }
-  .pic-container {
-    right: 10%;
-    top: 24%;
-    width: 70%;
-    text-align: center;
-}
+
 .about-container {
   max-width: 600px;
   width: 96%;
@@ -12013,7 +12008,7 @@ div#particles-js {
 
 .pic-container {
   right: -4%;
-  top: 16%;
+  top: 1vh;
   width: 70%;
   text-align: center;
 }
@@ -12032,4 +12027,11 @@ div#particles-js {
   top: 140px;
   left: -80px;
 }
+}
+
+
+@media  only screen and (max-width: 480px) {
+  .text-md.surname{
+    font-size: 42px;
+  }
 }

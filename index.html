@@ -47,7 +47,8 @@
     </style>
 </head>
 
-<body class="t-body"> <svg class="hidden" viewBox="0 0 500 160">
+<body class="t-body"> 
+    <svg class="hidden" viewBox="0 0 500 160">
         <defs>
             <clippath id="cp_up">
                 <polygon id="cp_poly_up" points="0,0 500,0 500,180" />
@@ -68,18 +69,24 @@
     <div id="fullpage">
         <div class="section active">
             <div class="wel-box">
-                <div class="wel-title">My name is</div>
                 <div class="name-f text-right"><a class="link link--ilin text-lg"
                         href="#"><span>Jos</span><span>eph</span></a></div>
                 <div class="name-s text-left"> <a class="link link--ilin text-md surname"
                         href="#"><span>Quint</span><span>inita</span></a></div>
-                <div class="wel-title">Front End Developer | Website Designer</div>
+                <div class="wel-title">Front-End Developer</div>
+                
             </div>
-            <div class="skew-box">
-            </div>
+            <!-- <div class="skew-box">
+            </div> -->
             <div id="particles-js"></div>
             <div id="trigger2"></div>
-            <a href="#a"></a>
+            <div class="mouse"><span>Scroll Down</span></div>
+            <div class="social-link">
+                <a href="https://www.facebook.com/kien.joseph/" target="_blank"><i class="icons8-facebook"></i></a>
+                <a href="https://m.me/kien.joseph" target="_blank"><i class="icons8-facebook-messenger"></i></a>
+                <a href="https://www.linkedin.com/in/jquintinita/" target="_blank"><i class="icons8-linkedin"></i></a>
+                <a href="https://t.me/imkneight" target="_blank"><i class="icons8-telegram-app"></i></a>
+            </div>
         </div>
         <div class="section about">
 
@@ -97,25 +104,7 @@
                     and challenging myself to grow, because for me, development isn’t just about the code; it’s about
                     making a real impact through meaningful digital experiences.</p>
                 <p>
-                    <strong>Skills:</strong>
-                <ul class="skill-list">
-                    <li class="html">HTML5</li>
-                    <li class="css">CSS3</li>
-                    <li class="jquery">jQuery</li>
-                    <li class="javascript">Javascript</li>
-                    <li class="nodejs">NodeJS</li>
-                    <li class="reactjs">ReactJs</li>
-                    <li class="wordpress">WordPress</li>
-                    <li class="shopfiy">Shopify</li>
-                    <li class="kentico">Kentico</li>
-                    <li class="github">Github</li>
-                    <li class="mongodb">MongoDB</li>
-                    <li class="tailwind">TailwindCSS</li>
-                    <li class="bootstrap">Bootstrap</li>
-                    <li class="reactjs">ExpressJS</li>
-                    <li class="photoshop">Adobe Photoshop</li>
-                    <li class="premier">Adobe Premier</li>
-                </ul>
+                    <a href="/Joseph Quintinita-CV.docx" target="_top" class="btn-download">Download CV</a>
                 </p>
                 <div class="tools row">
                     <div style="top:210px; left: 100px;"><img src="image/wordpress-logo-notext-rgb.png" alt="photoshop">
@@ -312,118 +301,183 @@
         </div>
         <div class="section work-experience">
             <div class="row">
-                <div class="work ">
-                   
+                <div class="work">
                    <div class="timeline">
                         <h2>My Work <b> Experience</b></h2>
                         <nav class="timeline__nav">
                             <ul>
-                            <li><span>2022 - Present</span></li>
-                            <li><span>2020 - 2022</span></li>
-                            <li><span>2019 - 2020</span></li>
-                            <li><span>2018 - 2019</span></li>
-                            <li><span>2015 - 2018</span></li>
-                            <li><span>2014 - 2015</span></li>
-                            <li><span>2013 - 2014</span></li>
+                                <li class="active"><span>2022 - Present</span></li>
+                                <li><span>2020 - 2022</span></li>
+                                <li><span>2019 - 2020</span></li>
+                                <li><span>2018 - 2019</span></li>
+                                <li><span>2015 - 2018</span></li>
+                                <li><span>2014 - 2015</span></li>
+                                <li><span>2013 - 2014</span></li>
                             </ul>
                         </nav>
                         <div class="timeline__section">
                             <div class="timeline-item active">
-                                <div class="job-title">Front-end Developer</div>
-                                <div class="company">Seven Seven Global Services, Inc.</div>
-                                <div class="dates">Oct 2022 – Present | Pasig City</div>
-                                <div><strong>Key Responsibilities</strong></div>
-                                <ul>
-                                <li>Creating landing pages using Kentico and Shopify.</li>
-                                <li>Integrate HTML templates and develop components in building a pages in the web applications </li>
-                                <li>Maintaining and updating client websites.</li>
-                                <li>Customized Shopify templates and sections using Liquid.</li>
-                                <li>Implement content management, application functionality, and integration requirements.</li>
-                                <li>Implementing accessibility and performance standards.</li>
-                                <li>Built a React.js web app with backend collaboration.</li>
-                                <li>Work within an agile development process, collaborating closely with the delivery team.</li>
+                                <div class="dates">Oct 2022 – Present </div>
+                                <h3 class="job-title">Front-end Developer</h3>
+                                <div class="company">Seven Seven Global Services, Inc. | Pasig City</div>
+                                <p class="details">
+                                    I have experience creating landing pages using Kentico and Shopify, integrating HTML templates and developing reusable components to build dynamic web application pages. My work involves maintaining and updating client websites, customizing Shopify templates and sections using Liquid, and implementing content management systems, application functionalities, and integration requirements. I ensure adherence to accessibility and performance standards while delivering high-quality user experiences. Additionally, I have built React.js web applications in collaboration with backend developers and have worked within agile development environments, closely collaborating with cross-functional delivery teams to meet project goals efficiently.
+                                </p>
+                                <ul class="skill-list">
+                                    <li class="orange-500">HTML5</li>
+                                    <li class="blue-700">CSS3</li>
+                                    <li class="gray-600">Javascript</li>
+                                    <li class="green-200">NodeJS</li>
+                                    <li class="sky-blue-200">ReactJs</li>
+                                    <li class="green-500">Shopify</li>
+                                    <li class="orange-300">Kentico</li>
+                                    <li class="violet-200">Github</li>
+                                    <li class="green-100">Agile</li>
+                                    <li class="blue-100">Adobe Photoshop</li>
+                                    <li class="violet-300">Adobe Animate</li>
                                 </ul>
                             </div>
-                        
                             <div class="timeline-item">
+                                <div class="dates">Nov 2020 – Oct 2022 </div>
                                 <div class="job-title">Senior Website Developer</div>
-                                <div class="company">National Strategic Group</div>
-                                <div class="dates">Nov 2020 – Oct 2022 | Remote</div>
-                                <div><strong>Key Responsibilities</strong></div>
-                                <ul>
-                                <li>Converted PSD designs to WordPress sites.</li>
-                                <li>Developed custom plugins and features.</li>
-                                <li>Optimized site performance using Page Insights.</li>
-                                <li>Experienced in Wordpress builders like DIVI, Elementor and WP Bakery.</li>
-                                <li>Worked closely with Design and SEO teams.</li>
+                                <div class="company">National Strategic Group | Remote</div>
+                                <p class="details">
+                                    Skilled in transforming PSD designs into fully responsive WordPress websites, I specialize in bringing visual concepts to life with clean, functional code. I create custom features and plugins to match unique design specifications and ensure websites are optimized with compressed images for improved performance. I also assist with regular website updates and deliver mobile-friendly sites that adapt seamlessly across devices. With hands-on experience using popular website builders like DIVI, Elementor, and WP Bakery, I can efficiently build and manage sites tailored to various client needs.
+                                </p>
+                                <ul class="skill-list">
+                                    <li class="blue-400">WordPress</li>
+                                    <li class="orange-500">HTML5</li>
+                                    <li class="blue-700">CSS3</li>
+                                    <li class="gray-600">Javascript</li>
+                                    <li class="gray-600">jQuery</li>
+                                    <li class="green-500">Shopify</li>
+                                    <li class="blue-100">Adobe Photoshop</li>
                                 </ul>
-                            </div>
-                        
+                            </div>               
                             <div class="timeline-item">
+                                <div class="dates">Apr 2019 – Jul 2020 </div>
                                 <div class="job-title">Front-end Developer</div>
-                                <div class="company">Cobalt 7 Designs Tech</div>
-                                <div class="dates">Apr 2019 – Jul 2020 | Mandaluyong City</div>
-                                <ul>
-                                <li>Built slot games with JavaScript, PixiJS, TypeScript.</li>
-                                <li>Released 1–2 games/month, fully optimized.</li>
-                                <li>Handled performance and asset optimization.</li>
+                                <div class="company">Cobalt 7 Designs Tech | Mandaluyong City</div>
+                                <p class="details">
+                                    Experienced in developing web-based slot games using modern technologies such as JavaScript (ES6), TypeScript, Node.js, Webpack, PixiJS, and the PureMVC framework. I consistently delivered 1–2 games per month, ensuring timely releases while maintaining high-quality standards. My responsibilities included optimizing game assets for performance, implementing game enhancements through regular updates, and ensuring each game was fully responsive and mobile-ready for a seamless player experience across devices.
+                                </p>
+                                <ul class="skill-list">
+                                    <li class="orange-500">HTML5</li>
+                                    <li class="blue-700">CSS3</li>
+                                    <li class="gray-600">Javascript (ES6)</li>
+                                    <li class="green-200">NodeJS</li>
+                                    <li class="sky-blue-200">ReactJs</li>
+                                    <li class="blue-400">TypeScript</li>
+                                    <li class="green-500">PixiJs</li>
+                                    <li class="violet-200">Github</li>
+                                    <li class="blue-600">PureMVC</li>
+                                    <li class="blue-100">Adobe Photoshop</li>
                                 </ul>
                             </div>
-                        
                             <div class="timeline-item">
-                                <div class="job-title">Front-end Developer / Designer</div>
+                                <div class="dates">Apr 2018 – Mar 2019 </div>
+                                <div class="job-title">Front-end Developer / Designer | Parañaque City</div>
                                 <div class="company">YRB Solutions</div>
-                                <div class="dates">Apr 2018 – Mar 2019 | Parañaque City</div>
-                                <ul>
-                                <li>Designed ads and graphics for marketing.</li>
-                                <li>Built landing pages and plugins.</li>
-                                <li>Created a game schedule page using AngularJS 1.</li>
+                                <p class="details">
+                                    With a strong eye for design and functionality, I’ve created graphic visuals for marketing campaigns and website assets, supporting cohesive brand presentation. I’ve developed and maintained landing pages, regularly updating website content and design elements to improve user engagement. My experience also includes building custom plugins to enhance site capabilities, along with developing a game scheduling feature using AngularJS 1 to support interactive content and dynamic data display.
+                                </p>
+                                <ul class="skill-list">
+                                    <li class="orange-500">HTML5</li>
+                                    <li class="blue-700">CSS3</li>
+                                    <li class="gray-600">Javascript</li>
+                                    <li class="green-200">jQuery</li>
+                                    <li class="violet-200">Github</li>
+                                    <li class="violet-300">Bootstrap</li>
+                                    <li class="green-100">AngularJS</li>
+                                    <li class="blue-100">Adobe Photoshop</li>
                                 </ul>
                             </div>
-                        
                             <div class="timeline-item">
+                                <div class="dates">Mar 2015 – Mar 2018 </div>
                                 <div class="job-title">Jr. Back-end Developer / Web Designer</div>
-                                <div class="company">Falcontek Corp.</div>
-                                <div class="dates">Mar 2015 – Mar 2018 | Makati City</div>
-                                <ul>
-                                <li>Built B2B backend using MVC + AngularJS 1.</li>
-                                <li>Integrated APIs and maintained client support.</li>
-                                <li>Designed web graphics and plugins.</li>
+                                <div class="company">Falcontek Corp. | Makati City</div>
+                                <p class="details">
+                                    <strong>Jr. Back-End Developer</strong><br/>
+                                    As a Jr. Back-End Developer, I was responsible for developing the server-side functionality of our B2B website ig128.com using an MVC framework and AngularJS 1. My role included implementing and integrating APIs, as well as providing client support for API integration processes to ensure seamless connectivity and performance.
+                                    <br/><br/>
+                                   <strong> Web Designer / Front-End Developer</strong><br/>
+                                    In this role, I was involved in both the visual and functional aspects of web development. I created web graphics and developed websites while also handling plugin development to extend website features. I optimized websites for better performance, regularly updated content, and designed mobile landing pages for responsive viewing. Additionally, I provided web graphic elements for various needs and resolved cross-browser compatibility issues to ensure consistent user experiences across platforms.
+                                </p>
+                                <ul class="skill-list">
+                                     <li class="orange-500">HTML5</li>
+                                    <li class="blue-700">CSS3</li>
+                                    <li class="gray-600">Javascript</li>
+                                    <li class="blue-600">jQuery</li>
+                                    <li class="blue-600">C#</li>
+                                    <li class="yellow-600">Microsoft SQL Server</li>
+                                    <li class="orange-500">AngularJS</li>
+                                    <li class="violet-300">Bootstrap</li>
+                                    <li class="blue-100">Adobe Photoshop</li>
+                                    <li class="violet-300">Adobe Premier</li>
                                 </ul>
                             </div>
-                        
                             <div class="timeline-item">
+                                <div class="dates">Feb 2014 – Jan 2015 </div>
                                 <div class="job-title">Web Designer / Graphic Artist</div>
-                                <div class="company">Click 4 Corp</div>
-                                <div class="dates">Feb 2014 – Jan 2015 | Remote</div>
-                                <ul>
-                                <li>Converted PSDs to responsive pages with Bootstrap.</li>
-                                <li>Created banners, logos, and invitations.</li>
-                                <li>Optimized sites using GTMetrix and PageSpeed.</li>
+                                <div class="company">Click 4 Corp | Remote</div>
+                                <p class="details">
+                                    I have experience converting PSD designs into clean, semantic HTML, creating responsive websites using frameworks like Bootstrap and Bourbon. My design skills include creating mockups, banners, logos, and invitations tailored to client needs. I'm also well-versed in WordPress development and have hands-on knowledge of SASS and SCSS for efficient, maintainable styling. Additionally, I focus on performance optimization, using tools such as GTmetrix, Google PageSpeed Insights, and FeedtheBot to enhance website speed and overall user experience.
+                                </p>
+                                <ul class="skill-list">
+                                    <li class="orange-500">HTML5</li>
+                                    <li class="blue-700">CSS3</li>
+                                    <li class="gray-600">Javascript</li>
+                                    <li class="green-200">jQuery</li>
+                                    <li class="pink-100">Sass / Scss</li>
+                                    <li class="blue-400">WordPress</li>
+                                    <li class="blue-600">Bourbon.IO</li>
+                                    <li class="violet-300">Bootstrap</li>
+                                    <li class="blue-100">Adobe Photoshop</li>
                                 </ul>
                             </div>
-                        
                             <div class="timeline-item">
+                                <div class="dates">Apr 2013 – Jan 2014 </div>
                                 <div class="job-title">System Administrator / Graphic Support</div>
-                                <div class="company">Qtech Business Solution, Inc.</div>
-                                <div class="dates">Apr 2013 – Jan 2014 | Lucena City</div>
-                                <ul>
-                                <li>Supported Etracs and QASA systems.</li>
-                                <li>Designed brochures and ads.</li>
-                                <li>Developed QPOS interfaces and handled server connections.</li>
+                                <div class="company">Qtech Business Solution, Inc.| Lucena City</div>
+                                <p class="details">
+                                    In my role as System Administrator for ETRACS (Enhanced Tax Revenue Assessment and Collection System), I handled system configuration, supported end-users through training and troubleshooting, and provided timely technical assistance during system issues. I also delivered user support for QASA (Quality and Simple Accounting) and contributed to the design and development of user interfaces for database processing and QPOS. My work extended to configuring server connections and ensuring system stability. Additionally, I supported graphic needs for Raquel Pawnshop’s internal system development and created marketing materials including brochures, flyers, and poster advertisements to strengthen the company’s visual identity.
+                                </p>
+                                <ul class="skill-list">
+                                    <li class="magenta-400">Microsoft SQL Server</li>
+                                    <li class="blue-400">Visual Basic</li>
+                                    <li class="blue-100">Adobe Photoshop</li>
                                 </ul>
                             </div>
                         </div>
                    </div>
+                  
                 </div>
             </div>
+        </div>
+        <div class="section download">
+       
+            <div class="row">
+                <div class="download-cv">
+                    <h2>Looking for a driven and dedicated professional?</h2>
+
+                    <p>Download my CV to learn more about my skills, experience, and accomplishments. I'm excited to bring my expertise to your team and help achieve your goals.</p>
+                    <a href="/Joseph Quintinita-CV.docx" target="_top">Download CV</a>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/kien.joseph/" target="_blank"><i class="icons8-facebook"></i></a>
+                        <a href="https://m.me/kien.joseph" target="_blank"><i class="icons8-facebook-messenger"></i></a>
+                        <a href="https://www.linkedin.com/in/jquintinita/" target="_blank"><i class="icons8-linkedin"></i></a>
+                        <a href="https://t.me/imkneight" target="_blank"><i class="icons8-telegram-app"></i></a>
+                    </div>
+                </div>
+            </div>
+    
         </div>
     </div>
     <div class="navi-menu">
         <div class="logo-container">
             <a href="#" class="logo"></a>
         </div>
-        <div class="burger-btn">
+        <div class="burger-btn"> 
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
@@ -434,6 +488,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
         </ul>
     </div>
 

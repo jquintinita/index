@@ -26,14 +26,14 @@ $(document).ready(function() {
 
     
     $('#fullpage').fullpage({
-    sectionsColor: ['#000', '#eee', 'whitesmoke', '#333', '#ccddff'],
-    anchors: ['home', 'about-me', 'portfolio', '4thpage', 'lastPage'],
+    sectionsColor: ['#000', '#eee', 'whitesmoke', '#333', '#555'],
+    anchors: ['home', 'about-me', 'portfolio', 'work-experience', 'download'],
     menu: '#menu',
     scrollingSpeed: 1000,
     responsiveWidth: 800,
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips:['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+    navigationTooltips:['home', 'about-me', 'portfolio', 'work-experience', 'download'],
     afterLoad: function(origin, destination, direction, trigger){
         console.log(destination);
         var currentPage = destination.toString();
@@ -50,6 +50,14 @@ $(document).ready(function() {
             case '3': 
                 $(".logo").addClass("invert");
                 $(".burger-btn").addClass("invert");
+                break;
+            case '4': 
+                $(".logo").removeClass("invert");
+                $(".burger-btn").removeClass("invert");
+                break;
+            case '5': 
+                $(".logo").removeClass("invert");
+                $(".burger-btn").removeClass("invert");
                 break;
             default:
                 $(".logo").removeClass("invert");
@@ -73,7 +81,20 @@ $(document).ready(function() {
                 console.log("here")
              }
         });
-    });
+
+
+
+        //Work experience
+        $(".timeline__nav > ul > li").click(function() {
+            const index = $(this).index();
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".timeline__section").children().removeClass("active").eq(index).addClass("active");
+        });
+        
+
+
+    
+});
     
     // init controller
     var controller = new ScrollMagic.Controller();
