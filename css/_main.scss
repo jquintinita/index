@@ -11576,7 +11576,7 @@ header {
 .about-container {
   position: absolute;
   left: 10%;
-  top: 10%;
+  top: 6vh;
   width: 43%;
   height: auto;
   padding: 20px;
@@ -11600,7 +11600,7 @@ header {
   @media only screen and (max-width: 1600px) {
     .about-container {
       left: 10%;
-      top: 30%; } }
+      top: 4vh; } }
   @media only screen and (max-width: 1440px) {
     .about-container {
       left: 10%;
