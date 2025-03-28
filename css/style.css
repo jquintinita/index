@@ -11263,6 +11263,18 @@ div#particles-js {
   transform: translate(-50%, -50%);
 }
 
+.gallery-slider .slick-prev:before, .gallery-slider .slick-next:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url(../image/left-chevron.png);
+  display: block;
+  background-size: contain;
+}
+.gallery-slider .slick-next:before {
+  transform: scale(-1);
+}
+
 .code-from {
   display: flex;
   gap: 8px;
@@ -11336,7 +11348,7 @@ div#particles-js {
 .mouse {
   width: 40px;
   height: 70px;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 60px;
   position: fixed;
   bottom: 40px;
