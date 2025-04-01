@@ -11548,11 +11548,9 @@ header {
 .about {
   position: relative;
   width: 100%;
-  height: 960px;
+  height: auto;
   overflow: hidden; }
-  @media only screen and (max-width: 1600px) {
-    .about {
-      height: 793px; } }
+ 
   .about #particles-js2 {
     position: absolute;
     left: 0;
@@ -11575,8 +11573,6 @@ header {
 
 .about-container {
   position: relative;
-  left: 10%;
-  top: 6vh;
   width: 43%;
   height: auto;
   padding: 20px;
@@ -11597,19 +11593,7 @@ header {
   .about-container p {
     color: #333;
     font-size: 20px; }
-  @media only screen and (max-width: 1600px) {
-    .about-container {
-      left: 10%;
-      top: 4vh; } }
-  @media only screen and (max-width: 1440px) {
-    .about-container {
-      left: 10%;
-      top: 25%; } }
-  @media only screen and (max-width: 1366px) {
-    .about-container {
-      left: 5%;
-      top: 25%; } }
-
+ 
 .pic-container {
   position: absolute;
   right: 6%;
@@ -11633,15 +11617,7 @@ header {
     text-align: right;
     color: #fff;
     font-weight: 100; }
-  @media only screen and (max-width: 1600px) {
-    .pic-container {
-      right: 4%; } }
-  @media only screen and (max-width: 1440px) {
-    .pic-container {
-      right: 2%; } }
-  @media only screen and (max-width: 1366px) {
-    .pic-container {
-      right: 2%; } }
+
 
 .portfolio {
   overflow: hidden; }
@@ -11861,14 +11837,7 @@ div#fp-nav.fp-right {
   right: -30px !important;
 }
 
-@media screen and (max-width: 1024px) {
-  .about-container {
-    left: 5%;
-    top: 35%;
-    width: 100%;
-    max-width: 550px;
-}
-}
+
 .gallery-desktop{
   display: block;
 }
@@ -12034,4 +12003,8 @@ div#particles-js {
   .text-md.surname{
     font-size: 42px;
   }
+}
+
+.home{
+  position: relative;
 }

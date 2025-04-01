@@ -25,48 +25,48 @@ $(document).ready(function() {
          
 
     
-    $('#fullpage').fullpage({
-    sectionsColor: ['#000', '#eee', 'whitesmoke', '#333', '#555'],
-    anchors: ['home', 'about-me', 'portfolio', 'work-experience', 'download'],
-    menu: '#menu',
-    scrollingSpeed: 1000,
-    responsiveWidth: 800,
-    navigation: true,
-    responsiveHeight: 410,
-    navigationPosition: 'right',
-    navigationTooltips:['home', 'about-me', 'portfolio', 'work-experience', 'download'],
-    afterLoad: function(origin, destination, direction, trigger){
-        console.log(destination);
-        var currentPage = destination.toString();
-        switch (currentPage) { 
-            case '1': 
-                $(".logo").removeClass("invert");
-                //burger-btn
-                $(".burger-btn").removeClass("invert");
-                break;
-            case '2': 
-                $(".logo").addClass("invert");
-                $(".burger-btn").addClass("invert");
-                break;
-            case '3': 
-                $(".logo").addClass("invert");
-                $(".burger-btn").addClass("invert");
-                break;
-            case '4': 
-                $(".logo").removeClass("invert");
-                $(".burger-btn").removeClass("invert");
-                break;
-            case '5': 
-                $(".logo").removeClass("invert");
-                $(".burger-btn").removeClass("invert");
-                break;
-            default:
-                $(".logo").removeClass("invert");
-                $(".burger-btn").removeClass("invert");
+    // $('#fullpage').fullpage({
+    // sectionsColor: ['#000', '#eee', 'whitesmoke', '#333', '#555'],
+    // anchors: ['home', 'about-me', 'portfolio', 'work-experience', 'download'],
+    // menu: '#menu',
+    // scrollingSpeed: 1000,
+    // responsiveWidth: 800,
+    // navigation: true,
+    // responsiveHeight: 410,
+    // navigationPosition: 'right',
+    // navigationTooltips:['home', 'about-me', 'portfolio', 'work-experience', 'download'],
+    // afterLoad: function(origin, destination, direction, trigger){
+    //     console.log(destination);
+    //     var currentPage = destination.toString();
+    //     switch (currentPage) { 
+    //         case '1': 
+    //             $(".logo").removeClass("invert");
+    //             //burger-btn
+    //             $(".burger-btn").removeClass("invert");
+    //             break;
+    //         case '2': 
+    //             $(".logo").addClass("invert");
+    //             $(".burger-btn").addClass("invert");
+    //             break;
+    //         case '3': 
+    //             $(".logo").addClass("invert");
+    //             $(".burger-btn").addClass("invert");
+    //             break;
+    //         case '4': 
+    //             $(".logo").removeClass("invert");
+    //             $(".burger-btn").removeClass("invert");
+    //             break;
+    //         case '5': 
+    //             $(".logo").removeClass("invert");
+    //             $(".burger-btn").removeClass("invert");
+    //             break;
+    //         default:
+    //             $(".logo").removeClass("invert");
+    //             $(".burger-btn").removeClass("invert");
                 
-        }
-    }
-    });
+    //     }
+    // }
+    // });
 
     $(".burger-btn").mainMenu();
        
@@ -101,22 +101,40 @@ $(document).ready(function() {
     var controller = new ScrollMagic.Controller();
    
     // build scene and set duration to window height
-    var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
+    var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger"})
     .setClassToggle(".featured", "slideUp")
     .addTo(controller);
     
-    var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
+    var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger"})
     .setClassToggle(".content", "slideDown")
     .addTo(controller);
     
-    var scene = new ScrollMagic.Scene({triggerElement: "#trigger2"})
+    var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger2"})
     .setClassToggle(".about-container", "slideLeft")
     .addTo(controller);
-    var scene = new ScrollMagic.Scene({triggerElement: "#trigger2"})
+    var scene4 = new ScrollMagic.Scene({triggerElement: "#trigger2"})
     .setClassToggle(".pic-container", "slideRight")
     .addTo(controller);
-    var scene = new ScrollMagic.Scene({triggerElement: "#trigger2"})
+    var scene5 = new ScrollMagic.Scene({triggerElement: "#trigger2"})
     .setClassToggle(".about-wel", "slideRight")
+    .addTo(controller);
+
+    var scene6 = new ScrollMagic.Scene({triggerElement: ".gallery-portfolio"})
+    .setClassToggle(".gal-title", "slideDown")
+    .addTo(controller);
+
+    var scene7 = new ScrollMagic.Scene({triggerElement: ".work-experience"})
+    .setClassToggle(".timeline > h2", "fadeIn")
+    .addTo(controller);
+
+
+    var scene7 = new ScrollMagic.Scene({triggerElement: ".work-experience"})
+    .setClassToggle(".timeline__nav", "slideLeft")
+    .addTo(controller);
+
+
+    var scene7 = new ScrollMagic.Scene({triggerElement: ".work-experience"})
+    .setClassToggle(".timeline__section", "slideRight")
     .addTo(controller);
 
 

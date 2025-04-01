@@ -10561,15 +10561,10 @@ header #particles-js {
 .about {
   position: relative;
   width: 100%;
-  height: 960px;
+  height: auto;
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1600px) {
-  .about {
-    height: 793px;
-  }
-}
 .about #particles-js2 {
   position: absolute;
   left: 0;
@@ -10594,8 +10589,6 @@ header #particles-js {
 
 .about-container {
   position: relative;
-  left: 10%;
-  top: 6vh;
   width: 43%;
   height: auto;
   padding: 20px;
@@ -10624,24 +10617,6 @@ header #particles-js {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 1600px) {
-  .about-container {
-    left: 10%;
-    top: 4vh;
-  }
-}
-@media only screen and (max-width: 1440px) {
-  .about-container {
-    left: 10%;
-    top: 25%;
-  }
-}
-@media only screen and (max-width: 1366px) {
-  .about-container {
-    left: 5%;
-    top: 25%;
-  }
-}
 .pic-container {
   position: absolute;
   right: 6%;
@@ -10671,21 +10646,6 @@ header #particles-js {
   font-weight: 100;
 }
 
-@media only screen and (max-width: 1600px) {
-  .pic-container {
-    right: 4%;
-  }
-}
-@media only screen and (max-width: 1440px) {
-  .pic-container {
-    right: 2%;
-  }
-}
-@media only screen and (max-width: 1366px) {
-  .pic-container {
-    right: 2%;
-  }
-}
 .portfolio {
   overflow: hidden;
 }
@@ -10946,14 +10906,6 @@ div#fp-nav.fp-right {
   right: -30px !important;
 }
 
-@media screen and (max-width: 1024px) {
-  .about-container {
-    left: 5%;
-    top: 35%;
-    width: 100%;
-    max-width: 550px;
-  }
-}
 .gallery-desktop {
   display: block;
 }
@@ -11115,6 +11067,10 @@ div#particles-js {
     font-size: 42px;
   }
 }
+.home {
+  position: relative;
+}
+
 .skill-list {
   display: flex;
   max-width: 600px;
@@ -11195,6 +11151,10 @@ div#particles-js {
   margin-bottom: 20px;
 }
 
+.about {
+  background-color: whitesmoke;
+}
+
 .aboutme-section {
   position: relative;
   display: flex;
@@ -11231,6 +11191,25 @@ div#particles-js {
     transform: translateY(-250px);
   }
 }
+.row {
+  margin: 0 !important;
+}
+
+.gallery-portfolio {
+  padding: 50px 20px;
+  background-color: #e7e7e7;
+  overflow: hidden;
+  position: relative;
+}
+
+.gal-title {
+  transform: translateY(-200%);
+  transition: all 200ms linear;
+}
+.gal-title.slideDown {
+  transform: translateY(0%);
+}
+
 .gallery-img {
   border-radius: 15px 15px 0 0;
 }
@@ -11391,7 +11370,7 @@ div#particles-js {
   height: 70px;
   border: 2px solid #ffffff;
   border-radius: 60px;
-  position: fixed;
+  position: absolute;
   bottom: 40px;
   left: 50%;
   transform: translate(-50%, 0);
@@ -11427,6 +11406,11 @@ div#particles-js {
     top: 60px;
   }
 }
+.work-experience {
+  background-color: #333;
+  overflow: hidden;
+  position: relative;
+}
 .work-experience .work {
   position: relative;
   padding: 0 40px;
@@ -11446,6 +11430,11 @@ div#particles-js {
   text-align: center;
   font-size: 48px;
   font-weight: 300;
+  transition: all 200ms ease-in;
+  opacity: 0;
+}
+.work-experience .work .timeline h2.fadeIn {
+  opacity: 1;
 }
 .work-experience .work .timeline h2 b {
   font-weight: 700;
@@ -11455,6 +11444,11 @@ div#particles-js {
   position: relative;
   z-index: 99;
   transition: top 0.3s ease-out;
+  transform: translateX(-300%);
+  transition: all 200ms linear;
+}
+.work-experience .work .timeline__nav.slideLeft {
+  transform: translateX(0);
 }
 .work-experience .work .timeline__nav ul {
   list-style: none;
@@ -11489,6 +11483,11 @@ div#particles-js {
 .work-experience .work .timeline .timeline__section {
   flex: 1;
   color: #fff;
+  transform: translateX(300%);
+  transition: all 200ms linear;
+}
+.work-experience .work .timeline .timeline__section.slideRight {
+  transform: translateX(0);
 }
 .work-experience .work .timeline .timeline__section p {
   color: #fff;
@@ -11530,6 +11529,14 @@ div#particles-js {
   .work-experience .work .timeline__nav ul li {
     flex: auto;
   }
+}
+
+.download {
+  padding: 50px 0;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .download-cv {
@@ -11603,7 +11610,7 @@ div#particles-js {
 }
 
 .social-link {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   display: flex;

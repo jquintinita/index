@@ -1,3 +1,20 @@
+.row{
+    margin: 0 !important;
+}
+.gallery-portfolio{
+    padding: 50px 20px;
+    background-color: #e7e7e7;
+    overflow: hidden;
+    position: relative;
+    
+}
+.gal-title{
+    transform: translateY(-200%);
+    transition: all 200ms linear;
+    &.slideDown{
+        transform: translateY(0%);
+    }
+}
 .gallery-img{
     border-radius:  15px 15px 0 0;
 }
@@ -173,7 +190,7 @@
 	height: 70px;
 	border: 2px solid #ffffff;
 	border-radius: 60px;
-	position: fixed;
+	position: absolute;
     bottom: 40px;
     left: 50%;
     transform: translate(-50%, 0);
@@ -216,3 +233,6 @@
 		top: 60px;
 	}
 }
+
+
+
