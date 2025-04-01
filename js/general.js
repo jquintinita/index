@@ -32,6 +32,7 @@ $(document).ready(function() {
     scrollingSpeed: 1000,
     responsiveWidth: 800,
     navigation: true,
+    responsiveHeight: 410,
     navigationPosition: 'right',
     navigationTooltips:['home', 'about-me', 'portfolio', 'work-experience', 'download'],
     afterLoad: function(origin, destination, direction, trigger){

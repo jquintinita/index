@@ -10374,8 +10374,8 @@ header #particles-js {
   width: 80px;
   height: auto;
   position: absolute;
-  left: 60px;
-  top: 60px;
+  left: 30px;
+  top: 30px;
 }
 
 .logo-container > a {
@@ -10397,7 +10397,7 @@ header #particles-js {
   width: 40px;
   height: 60px;
   position: fixed;
-  right: 60px;
+  right: 30px;
   top: 35px;
   z-index: 9999;
   cursor: pointer;
@@ -10593,7 +10593,7 @@ header #particles-js {
 }
 
 .about-container {
-  position: absolute;
+  position: relative;
   left: 10%;
   top: 6vh;
   width: 43%;
@@ -11195,6 +11195,42 @@ div#particles-js {
   margin-bottom: 20px;
 }
 
+.aboutme-section {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 70px 20px;
+}
+.aboutme-section .pic-container {
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  .aboutme-section {
+    flex-direction: column;
+  }
+  .aboutme-section .pic-container {
+    right: -15%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wel-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 46% !important;
+  }
+  .about-container {
+    position: relative;
+    padding: 54px 20px 0px;
+    z-index: 9999;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .about-container .tools {
+    transform: translateY(-250px);
+  }
+}
 .gallery-img {
   border-radius: 15px 15px 0 0;
 }
@@ -11275,6 +11311,11 @@ div#particles-js {
   transform: scale(-1);
 }
 
+@media screen and (max-width: 480px) {
+  .gallery-container {
+    padding: 20px 20px;
+  }
+}
 .code-from {
   display: flex;
   gap: 8px;
@@ -11443,7 +11484,7 @@ div#particles-js {
   font-size: 22px;
 }
 .work-experience .work .timeline__nav ul li:hover {
-  color: #fafafa;
+  color: #f94125;
 }
 .work-experience .work .timeline .timeline__section {
   flex: 1;
@@ -11472,9 +11513,27 @@ div#particles-js {
 .work-experience .work .timeline .timeline__section .timeline-item .company {
   margin-bottom: 15px;
 }
+@media screen and (max-width: 680px) {
+  .work-experience .work .timeline {
+    flex-direction: column;
+  }
+  .work-experience .work .timeline__nav {
+    flex: 0 auto;
+    overflow-x: scroll;
+    width: 100%;
+  }
+  .work-experience .work .timeline__nav ul {
+    flex-direction: row;
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+  .work-experience .work .timeline__nav ul li {
+    flex: auto;
+  }
+}
 
 .download-cv {
-  width: 100%;
+  width: 80%;
   max-width: 680px;
   margin: 0 auto;
   text-align: center;
@@ -11511,17 +11570,23 @@ div#particles-js {
 .download-cv .social-media a:hover {
   transform: scale(1.2);
 }
+@media screen and (max-width: 480px) {
+  .download-cv {
+    width: 80%;
+  }
+}
 
 .btn-download {
   display: inline-block;
-  padding: 10px 25px;
+  padding: 5px 25px;
   background-color: #f94125;
   color: #fff;
-  border-radius: 30px;
   text-decoration: none;
   transition: all 200ms linear;
   border: 2px solid #f94125;
   font-size: 20px;
+  border-radius: 20px;
+  text-shadow: none !important;
 }
 .btn-download:hover {
   color: #f94125;
@@ -11551,6 +11616,13 @@ div#particles-js {
 }
 .social-link a:hover {
   transform: scale(1.2);
+}
+@media screen and (max-width: 520px) {
+  .social-link {
+    bottom: 200px;
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .icons8-telegram-app {

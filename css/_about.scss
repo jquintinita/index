@@ -75,3 +75,40 @@
     font-size: 15px;
     margin-bottom: 20px;
 }
+.aboutme-section{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 70px 20px;
+    
+    .pic-container{
+        position: relative;
+    }
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        .pic-container{
+            right: -15%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .wel-box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        top: 46% !important;
+    }
+   .about-container{
+     position: relative;
+     padding: 54px 20px 0px;
+     z-index: 9999;
+     -webkit-backdrop-filter: none;
+     backdrop-filter: none;
+     .tools{
+        transform: translateY(-250px);
+     }
+     
+   }
+}

@@ -11396,8 +11396,8 @@ header {
   width: 80px;
   height: auto;
   position: absolute;
-  left: 60px;
-  top: 60px; }
+  left: 30px;
+  top: 30px; }
   .logo-container > a {
     display: block;
     width: 100%;
@@ -11415,7 +11415,7 @@ header {
   width: 40px;
   height: 60px;
   position: fixed;
-  right: 60px;
+  right: 30px;
   top: 35px;
   z-index: 9999;
   cursor: pointer;
@@ -11574,7 +11574,7 @@ header {
     top: 64%; }
 
 .about-container {
-  position: absolute;
+  position: relative;
   left: 10%;
   top: 6vh;
   width: 43%;

@@ -55,7 +55,7 @@
                         }
                         
                         &:hover {
-                            color: #fafafa
+                            color: #f94125;
                         }
                     }
                 }
@@ -87,13 +87,28 @@
                     }
                 }
             }
+            @media screen and (max-width:680px) {
+                flex-direction: column;
+                &__nav{
+                    flex: 0 auto;
+                    overflow-x: scroll;
+                    width: 100%;
+                    ul{
+                        flex-direction: row;
+                        min-width: max-content;
+                        li{
+                            flex: auto;
+                        }
+                    }
+                }
+            }
         }
 
     }
 }
 
 .download-cv{
-    width: 100%;
+    width: 80%;
     max-width: 680px;
     margin: 0 auto;
     text-align: center;
@@ -129,17 +144,21 @@
             }
         }
     }
+    @media  screen and (max-width:480px) {
+        width: 80%;
+    }
 }
 .btn-download{
     display: inline-block;
-    padding: 10px 25px;
+    padding: 5px 25px;
     background-color: #f94125;
     color: #fff;
-    border-radius: 30px;
     text-decoration: none;
     transition: all 200ms linear;
     border: 2px solid #f94125;
     font-size: 20px;
+    border-radius: 20px;
+    text-shadow: none !important;
     &:hover{
         color: #f94125;
         background-color: #fff;
@@ -170,6 +189,11 @@
             transform: scale(1.2);
         }
     }
+    @media screen and (max-width:520px) {
+        bottom: 200px;
+        width: 100%;
+        justify-content: center;
+    }
 }
 .icons8-telegram-app { 
     display: inline-block;
@@ -198,3 +222,5 @@
     height: 32px;
     background: url('../image/icons8-linkedin-100.svg') 50% 50% no-repeat;
     background-size: 100%; }
+
+

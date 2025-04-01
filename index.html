@@ -88,38 +88,40 @@
                 <a href="https://t.me/imkneight" target="_blank"><i class="icons8-telegram-app"></i></a>
             </div>
         </div>
-        <div class="section about">
+        <div class="section about fp-auto-height">
 
-            <div class="pic-container">
-                <img src="image/myphoto.png" alt="" />
-            </div>
-
-            <div class="about-container">
-                <h2>I'm <b>JOSEPH Q.</b></h2>
-                <h3>Front-End Developer</h3>
-                <p>I'm a Front-End Developer with 11 years of experience creating clean, responsive, and user-friendly
-                    designs. Turning ideas into sleek, functional web experiences is what I love to do, and I'm all
-                    about working with HTML, CSS, JavaScript, and frameworks like React. Collaboration is my jam—I enjoy
-                    teaming up with others to make projects better and more innovative. I’m always learning new things
-                    and challenging myself to grow, because for me, development isn’t just about the code; it’s about
-                    making a real impact through meaningful digital experiences.</p>
-                <p>
-                    <a href="https://drive.google.com/file/d/1pDJ3fQArfa181ysGv1KcQzKFcWfyACOK/view?usp=sharing" target="_blank" class="btn-download">Download CV</a>
-                </p>
-                <div class="tools row">
-                    <div style="top:10px; left: 100px;"><img src="image/wordpress-logo-notext-rgb.png" alt="photoshop">
+            <div class="aboutme-section">
+                <div class="pic-container">
+                    <img src="image/myphoto.png" alt="" />
+                </div>
+    
+                <div class="about-container">
+                    <h2>I'm <b>JOSEPH Q.</b></h2>
+                    <h3>Front-End Developer</h3>
+                    <p>I'm a Front-End Developer with 11 years of experience creating clean, responsive, and user-friendly
+                        designs. Turning ideas into sleek, functional web experiences is what I love to do, and I'm all
+                        about working with HTML, CSS, JavaScript, and frameworks like React. Collaboration is my jam—I enjoy
+                        teaming up with others to make projects better and more innovative. I’m always learning new things
+                        and challenging myself to grow, because for me, development isn’t just about the code; it’s about
+                        making a real impact through meaningful digital experiences.</p>
+                    <p>
+                        <a href="https://drive.google.com/file/d/1pDJ3fQArfa181ysGv1KcQzKFcWfyACOK/view?usp=sharing" target="_blank" class="btn-download">Download CV</a>
+                    </p>
+                    <div class="tools row">
+                        <div style="top:10px; left: 100px;"><img src="image/wordpress-logo-notext-rgb.png" alt="photoshop">
+                        </div>
+                        <div style="top:-40px; left: 212px;"><img src="image/photoshop.png" alt="photoshop"></div>
+                        <div style="top:100px; left: -130px;"><img src="image/ai.png" alt="photoshop"></div>
+                        <div style="top:200px; left: 30px;"><img src="image/ae.png" alt="photoshop"></div>
+                        <div style="top:10px; left: 80px;"><img src="image/node-js.png" alt="node-js"></div>
+                        <div style="top:90px; left: 180px;"><img src="image/reactJs.png" alt="reactjs"></div>
+                        <div style="top:20px; left: 30px;"><img src="image/html5-icon-2.png" alt="photoshop"></div>
+                        <div style="top:20px; left: 198px;"><img src="image/css3.png" alt="photoshop"></div>
+                        <div style="top:0; left:208px;"><img src="image/Javascript-shield_grysg1.png" alt="photoshop">
+                        </div>
+                        <div style="top:40px; left: 250px;"><img src="image/VisualStudioLogo.png" alt="photoshop"></div>
+    
                     </div>
-                    <div style="top:-40px; left: 212px;"><img src="image/photoshop.png" alt="photoshop"></div>
-                    <div style="top:100px; left: -130px;"><img src="image/ai.png" alt="photoshop"></div>
-                    <div style="top:200px; left: 30px;"><img src="image/ae.png" alt="photoshop"></div>
-                    <div style="top:10px; left: 80px;"><img src="image/node-js.png" alt="node-js"></div>
-                    <div style="top:90px; left: 180px;"><img src="image/reactJs.png" alt="reactjs"></div>
-                    <div style="top:20px; left: 30px;"><img src="image/html5-icon-2.png" alt="photoshop"></div>
-                    <div style="top:20px; left: 198px;"><img src="image/css3.png" alt="photoshop"></div>
-                    <div style="top:0; left:208px;"><img src="image/Javascript-shield_grysg1.png" alt="photoshop">
-                    </div>
-                    <div style="top:40px; left: 250px;"><img src="image/VisualStudioLogo.png" alt="photoshop"></div>
-
                 </div>
             </div>
             <div id="particles-js2"></div>
@@ -527,9 +529,14 @@
             slidesToScroll: 1,
             responsive: [
                 {
+                    breakpoint: 990,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
                     breakpoint: 768,
                     settings: {
-                        centerMode: false,
                         slidesToShow: 1
                     }
                 }
