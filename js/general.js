@@ -139,4 +139,59 @@ $(document).ready(function() {
 
 
 
+    // JavaScript for smooth scroll (if not supported by CSS)
+    document.querySelectorAll('.smooth-scroll').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetID = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetID);
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+
     
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+
+        switch (entry.target.id) { 
+            case 'home': 
+                $(".logo").removeClass("invert");
+                //burger-btn
+                $(".burger-btn").removeClass("invert");
+                break;
+            case 'about-me': 
+                $(".logo").addClass("invert");
+                $(".burger-btn").addClass("invert");
+                break;
+            case 'portfolio': 
+                $(".logo").addClass("invert");
+                $(".burger-btn").addClass("invert");
+                break;
+            case 'work-experience': 
+                $(".logo").removeClass("invert");
+                $(".burger-btn").removeClass("invert");
+                break;
+            case 'download-cv': 
+                $(".logo").removeClass("invert");
+                $(".burger-btn").removeClass("invert");
+                break;
+            default:
+                $(".logo").addClass("invert");
+                $(".burger-btn").addClass("invert");
+                
+        }
+                console.log(`${entry.target.id} is in view`);
+            } else {
+                entry.target.classList.remove('active');
+            }
+        });
+    }, {
+        threshold: 0.5 // 50% of the element must be visible
+    });
+
+    sections.forEach(section => observer.observe(section));

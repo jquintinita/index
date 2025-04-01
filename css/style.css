@@ -9,6 +9,7 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
+  scroll-behavior: smooth; /* Enables smooth scroll for modern browsers */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -10373,7 +10374,7 @@ header #particles-js {
 .logo-container {
   width: 80px;
   height: auto;
-  position: absolute;
+  position: fixed;
   left: 30px;
   top: 30px;
 }
@@ -10925,7 +10926,7 @@ div#fp-nav.fp-right {
   .logo-container {
     width: 50px;
     height: auto;
-    position: absolute;
+    position: fixed;
     left: 30px;
     top: 14px;
   }
@@ -11533,7 +11534,7 @@ div#particles-js {
 
 .download {
   padding: 50px 0;
-  min-height: 600px;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
